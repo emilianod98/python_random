@@ -1,5 +1,5 @@
 Nombre: Julio
 Apellido: Roca
-50 Aï¿½os
+50 Años
 Lenguaje C+, R, SQL
 Y otros conocimientos en HTML & CSS

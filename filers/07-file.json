@@ -2,7 +2,11 @@
   "name": "Julio",
   "surname": "Roca",
   "age": 50,
-  "lenguaje": "C+",
+  "lenguaje": [
+    "C+",
+    "R",
+    "SQL"
+  ],
   "website": "https://jroca.dev",
   "email": "jroca@gmail.com",
   "phone": "123456789"

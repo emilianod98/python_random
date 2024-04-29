@@ -35,7 +35,7 @@ with open("./filers/07-file.json", "w+") as file_json:
         "name": "Julio",
         "surname": "Roca",
         "age" : 50,
-        "lenguaje": "C+",
+        "lenguaje": ["C+", "R", "SQL"],
         "website": "https://jroca.dev",
         "email": "jroca@gmail.com",
         "phone": "123456789",
@@ -43,3 +43,34 @@ with open("./filers/07-file.json", "w+") as file_json:
 
     # Escribe el JSON serializado en el archivo
     json.dump(json_text, file_json, indent=2)
+    file_json.close()
+
+# Abre el archivo en modo lectura
+with open("./filers/07-file.json", "r") as file_json:
+    # Deserializa el JSON
+    json_text = json.load(file_json)
+
+    # Imprime el JSON deserializado
+    print(json_text)
+    print(json_text["name"])   
+    print(type(json_text))
+
+    file_json.close()
+
+# .csv file
+import csv
+file_csv = open("./filers/07-file.csv", "w+")
+file_csv_writer = csv.writer(file_csv)
+file_csv_writer.writerow(["name", "surname", "age"])
+file_csv_writer.writerow(["Julio", "Roca", 50])
+file_csv_writer.writerow(["Julia", "Sosa", 28])
+
+
+# with open("./filers/07-file.csv") as fil_csv:
+
+
+# .xlsx file
+# import xlrd #instalar modulo
+
+# .xml file
+import xml

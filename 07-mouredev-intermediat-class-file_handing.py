@@ -64,10 +64,12 @@ file_csv_writer = csv.writer(file_csv)
 file_csv_writer.writerow(["name", "surname", "age"])
 file_csv_writer.writerow(["Julio", "Roca", 50])
 file_csv_writer.writerow(["Julia", "Sosa", 28])
+file_csv.close()
 
-
-# with open("./filers/07-file.csv") as fil_csv:
-
+with open("./filers/07-file.csv", "r") as my_other_file:
+    for line in my_other_file:
+        print(line)
+    my_other_file.close()
 
 # .xlsx file
 # import xlrd #instalar modulo

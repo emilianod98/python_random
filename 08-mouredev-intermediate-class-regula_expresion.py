@@ -1,3 +1,5 @@
+### REGULAR EXPRESION ###
+
 import re
 
 my_string = "Esta es la lección número 8:\nLección de Expresiones Regulares"
@@ -55,4 +57,8 @@ print(re.findall(pattern, my_string))
 pattern = r'[l].*'
 print(re.findall(pattern, my_string))
 
-###  
+email = "emidaniele98@gmail.com"
+pattern = r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'
+print(re.match(pattern, email))
+print(re.search(pattern, email))
+print(re.findall(pattern, email))

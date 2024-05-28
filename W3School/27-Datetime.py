@@ -70,4 +70,5 @@ Directive	Description	                                                Example
 %%	        A % character	                                            %	
 %G	        ISO 8601 year	                                            2018	
 %u	        ISO 8601 weekday (1-7)	                                    1	
-%V	        ISO 8601 weeknumber (01-53)	                                01'''
+%V	        ISO 8601 weeknumber (01-53)	                                01
+'''

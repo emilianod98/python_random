@@ -23,3 +23,20 @@ By default the read() method returns the whole text, but you can also specify ho
 
 f = open("demofile.txt", "r")
 print(f.read(5))
+
+
+
+# Read Lines
+f = open("demofile.txt", "r")
+print(f.readline()) # You can return one line by using the readline() method.
+
+f = open("demofile.txt", "r")
+for x in f:
+    print(x) # Loop through the file line by line.
+
+
+
+# Close Files
+f = open("demofile.txt", "r")
+print(f.readline())
+f.close() # Close the file when you are finish with it.
